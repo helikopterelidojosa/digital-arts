@@ -49,11 +49,12 @@ function refresh() {
     location.reload();
 }
 
-//function to save automatically the canvas every 3 seconds
+//function to save the canvas as an image
 function saveCanvas() {
-    var dataURL = canvas.toDataURL();
-    document.getElementById("myCanvas").src = dataURL;
-
+    var link = document.createElement('a');
+    link.download = 'myCanvas.png';
+    link.href = canvas.toDataURL();
+    link.click();
 }
 
 
