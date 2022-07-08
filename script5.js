@@ -35,11 +35,21 @@ function saveCanvas() {
     link.click();
 }
 
+//save the canvas every 3 seconds
+setInterval(function() {
+    saveCanvas();
+}
+, 3000);
+
 //refresh the canvas
 function refresh() {
     location.reload();
 }
 
-
+//save the canvas every 3 seconds
+setInterval(function() {
+    saveCanvas();
+}
+, 3000);
 
 
