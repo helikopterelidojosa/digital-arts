@@ -44,7 +44,7 @@
     <!-- navigation next and previous -->
     <nav>
         <ul class="nav-list">
-            <li><a href="./canvas4.html">previous</a></li>
+            <li><a href="./canvas5.html">previous</a></li>
             <!-- button onclick=refresh -->
             <li><button onclick="refresh()">get new image</button></a></li>
 
@@ -63,31 +63,22 @@
 
 <!-- sliders for h,s,l -->
     <div class="slider-container">
-        <h2>simple color picker</h2>
+        <h2>canvas size of your choice</h2>
 
+        <h4>please choose numbers 10-1000:</h4>
+        <!-- #myForm is the id of the form -->
+        <form id="myForm">
+           width horizontal 
+        <!-- input numbers for  set-width and set-height min=10 max=1000 value=200-->
+        <input id="set-width" name="set-width" type="number" min="10" max="1000" value="200" />
+        height vertical
+        <input  id="set-height" name="set-height" type="number"  min="10" max="1000" value="200" />
 
-      
-
-
-    <h4>HEX value of this color:</h4>
-    <p id="color-text"></p>
+        </form>
     
-    
-      <div class="slider-row">
-        <div class="slider-label">hue</div>
-        <input type="range" min="0" max="360" value="30" class="slider" id="hue" />
-      </div>
-      <div class="slider-row">
-        <div class="slider-label">saturation</div>
-        <input type="range" min="0" max="100" value="50" class="slider" id="saturation" />
-      </div>
-      <div class="slider-row">
-        <div class="slider-label">lightness</div>
-        <input type="range" min="0" max="100" value="50" class="slider" id="lightness" />
-      </div>
     </div>
 </main>
-    <script src="./script5.js"></script>
+    <script src="./script6.js"></script>
     </body>
 </html>
 

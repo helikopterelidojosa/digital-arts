@@ -1,0 +1,159 @@
+<!-- document type html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <title>how to make random</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>how to make random</h1>
+        <h3>random colors or numbers, or letters</h3>
+        <!-- nav -->
+        <nav>
+            <ul class="random-nav-list">
+                <li><a href="#random-colors">random colors</a></li>
+                <li><a href="#random-digit">random digit</a></li>
+                <li><a href="#random-number">random number</a></li>
+                <li><a href="#random-letters">random letters</a></li>
+                <li><a href="#random-words">random words</a></li>
+                <li><a href="#random-boolean">random boolean (true/false)</a></li>
+                <li><a href="#random-boolean-2">random boolean (yes/no)</a></li>
+                <li><a href="#random-boolean-3">random boolean (on/off)</a></li>
+                <li><a href="#random-boolean-4">random boolean (1/0)</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="random-colors">
+            <h2>random colors</h2>
+            <p id="demo"></p>
+            <!-- button function random color -->
+            <button onclick="randomColor()">get new color</button>
+        </section>
+
+        <section id="random-digit" title="digits can also repeat randomly">
+            <h2>random digit:</h2>
+            <p id="demo2"></p>
+           <!--js show thinking emoji for 1 second -->
+            <script>
+                function showThinkingEmoji() {
+                    document.getElementById("demo2").innerHTML = "&#128528;";
+                    setTimeout(function() {
+                        document.getElementById("demo2").innerHTML = "&#128528;&#128528;";
+                    }, 1000);
+                }
+            </script>
+
+            
+            <!-- button function random digit -->
+            <button onclick="randomDigit()">get new digit</button>
+        </section>
+
+    
+
+
+
+
+        <section id="random-number" title="please enter positive numbers 1-1000000">
+            <h2>random number:</h2>
+            <p id="demo3"></p>
+        <!-- input smallest number, biggest number, click for random, show js function -->
+            <input type="number" id="smallest" min="1" title="please enter positive numbers 1-1000000"  title="smallest number">
+            <input type="number" id="biggest" max="1000000" placeholder="biggest number">
+            <button onclick="randomNumber()">get new number</button>
+            <script>
+                //js function random number between two numbers
+                function randomNumber() {
+                    var smallest = document.getElementById("smallest").value;
+                    var biggest = document.getElementById("biggest").value;
+                    var random = (Math.ceil(Math.random() * (biggest - (smallest + 1)))+smallest);
+                    document.getElementById("demo3").innerHTML = random;
+                }
+            </script>
+           
+        </section>
+
+        <section id="random-letters">
+            <h2>random letters:</h2>
+            <p id="demo4"></p>
+           
+
+            <!-- button function random letters -->
+            <button onclick="randomLetters()">get new letters</button>
+        </section>
+
+        <section id="random-words">
+            <h2>random words:</h2>
+            <p id="demo5"></p>
+            <!-- button function random words -->
+            <button onclick="randomWords()">get new words</button>
+        </section>
+
+        <section id="random-boolean">
+            <h2>random boolean:</h2>
+            <p id="demo6"></p>
+            <!-- button function random boolean -->
+            <button onclick="randomBoolean()">get new boolean</button>
+
+            <script>
+                function randomBoolean() {
+                    var randomBoolean = Math.random() >= 0.5;
+                    document.getElementById("demo6").innerHTML = randomBoolean;
+                }
+            </script>
+        </section>
+
+        <section id="random-boolean-2">
+            <h2>random boolean 2:</h2>
+            <p id="demo7"></p>
+            <!-- button function random boolean 2 -->
+            <button onclick="randomBoolean2()">get new boolean 2</button>
+
+            <script>
+                function randomBoolean2() {
+                    var randomBoolean2 = Math.random() >= 0.5;
+                    document.getElementById("demo7").innerHTML = randomBoolean2;
+                }
+            </script>
+        </section>
+
+        <section id="random-boolean-3">
+            <h2>random boolean 3:</h2>
+            <p id="demo8"></p>
+            <!-- button function random boolean 3 -->
+            <button onclick="randomBoolean3()">get new boolean 3</button>
+
+            <script>
+                function randomBoolean3() {
+                    var randomBoolean3 = Math.random() >= 0.5;
+                    document.getElementById("demo8").innerHTML = randomBoolean3;
+                }
+            </script>
+        </section>
+
+        <section id="random-boolean-4">
+            <h2>random boolean 4:</h2>
+            <p id="demo9"></p>
+            <!-- button function random boolean 4 -->
+            <button onclick="randomBoolean4()">get new boolean 4</button>
+
+            <script>
+                function randomBoolean4() {
+                    var randomBoolean4 = Math.random() >= 0.5;
+                    document.getElementById("demo9").innerHTML = randomBoolean4;
+                }
+            </script>
+        </section>
+    </main>
+    
+<!-- script src -->
+<script src="./script-randomization.js"></script>
+</body>
+</html>

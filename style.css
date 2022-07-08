@@ -176,5 +176,46 @@ a #logo-link{
 }
 
 
+/* for random html */
 
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: normal;
+    color: #4619e9;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.random-nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* align up */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #722c2c;
+    /* remove bullets */
+    list-style: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#demo2{
+    font-size: xx-large;
+}
+  
     
