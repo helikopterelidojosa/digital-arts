@@ -1,0 +1,89 @@
+<!-- copy canvas.html to canvas2.html -->
+<!-- html document -->
+<!DOCTYPE html>
+<!-- Path: ./canvas2.html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+    <title>drawin in canvas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: white;">
+    <a href="./index.html" id="logo-link"><img src="./logo.png" alt="logo" id="logo"></a>
+    <h1>Dawing on canvas</h1>
+    <nav>
+        <ul  id="big-screen-nav-list" class="nav-list">
+            <li><a href="./canvas.html">canvas</a></li>
+            <li><a href="./canvas2.html">canvas2</a></li>
+            <li><a href="./canvas3.html">canvas3</a></li>
+            <!-- canvas4.html class current page -->
+            <li><a href="./canvas4.html">canvas4</a></li>
+
+
+            <li  class="current-page"><a href="./canvas4.html">canvas15</a></li>
+            <li><a href="./canvas6.html">canvas6</a></li>
+            <li><a href="./canvas7.html">canvas7</a></li>
+            <li><a href="./canvas8.html">canvas8</a></li>
+            <li><a href="./canvas9.html">canvas9</a></li>
+            <li><a href="./canvas10.html">canvas10</a></li>
+            <li><a href="./canvas11.html">canvas11</a></li>
+            <li><a href="./canvas12.html">canvas12</a></li>
+            <li><a href="./canvas13.html">canvas13</a></li>
+            <li><a href="./canvas14.html">canvas14</a></li>
+            <li><a href="./canvas15.html">canvas15</a></li>
+            <li><a href="./canvas16.html">canvas16</a></li>
+            <li><a href="./canvas17.html">canvas17</a></li>
+            <li><a href="./canvas18.html">canvas18</a></li>
+            <li><a href="./canvas19.html">canvas19</a></li>
+            <li><a href="./canvas20.html">canvas20</a></li>
+            <li><a href="./canvas21.html">canvas21</a></li>
+    </nav>
+
+    <!-- navigation next and previous -->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="./canvas4.html">previous</a></li>
+            <!-- button onclick=refresh -->
+            <li><button onclick="refresh()">get new image</button></a></li>
+
+            <li><!-- click to save the image -->
+              <button id="save-image" onclick="saveCanvas()" >save image</button></li>
+            <li><a href="./canvas5.html">next</a></li>
+        </ul>
+    </nav>
+    
+<main id="main-container-canvas5">
+
+    <div class="canvas-container">
+      <canvas id="myCanvas" width="100" height="100"></canvas>
+    </div>
+
+
+<!-- sliders for h,s,l -->
+    <div class="slider-container">
+        <h2>simple color picker</h2>
+    <h4>HEX value of this color:</h4>
+    <p id="color-text"></p>
+    
+    
+      <div class="slider-row">
+        <div class="slider-label">hue</div>
+        <input type="range" min="0" max="360" value="30" class="slider" id="hue" />
+      </div>
+      <div class="slider-row">
+        <div class="slider-label">saturation</div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="saturation" />
+      </div>
+      <div class="slider-row">
+        <div class="slider-label">lightness</div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="lightness" />
+      </div>
+    </div>
+</main>
+    <script src="./script5.js"></script>
+    </body>
+</html>
+
+
