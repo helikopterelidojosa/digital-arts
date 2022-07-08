@@ -147,14 +147,6 @@ function saveCanvas() {
 }
 
 
-//save the canvas every 3 seconds
-setInterval(function() {
-  saveCanvas();
-}
-, 3000);
-
-
-
 
 
 
