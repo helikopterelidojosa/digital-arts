@@ -138,6 +138,21 @@ ctx.strokeRect(10, 10, 380, 280);
 
 } , 4000);
 
+//function to save the canvas as an image
+function saveCanvas() {
+  var link = document.createElement('a');
+  link.download = 'myCanvas.png';
+  link.href = canvas.toDataURL();
+  link.click();
+}
+
+
+//save the canvas every 3 seconds
+setInterval(function() {
+  saveCanvas();
+}
+, 3000);
+
 
 
 

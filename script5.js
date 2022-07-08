@@ -26,6 +26,10 @@ function drawRectangle() {
     changeColor();
     ctx.fillRect(0, 0, 400, 400);
 }
+//refresh the canvas
+function refresh() {
+    location.reload();
+}
 
 //function to save the canvas as an image
 function saveCanvas() {
@@ -35,21 +39,15 @@ function saveCanvas() {
     link.click();
 }
 
-//save the canvas every 3 seconds
-setInterval(function() {
-    saveCanvas();
-}
-, 3000);
-
-//refresh the canvas
-function refresh() {
-    location.reload();
-}
 
 //save the canvas every 3 seconds
 setInterval(function() {
     saveCanvas();
 }
 , 3000);
+
+
+
+
 
 
